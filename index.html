@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PHE GeoHub | Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/script.js" defer></script>
+  <style>
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.1);
+      min-width: 160px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+    .dropdown-content a {
+      color: #ffffff;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    .dropdown-content a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    nav > a,
+    .dropdown > span {
+      color: #ffdd57;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+<nav>
+  <a href="/index.html">Home</a>
+  <div class="dropdown">
+    <span>About Us</span>
+    <div class="dropdown-content">
+      <a href="/about/phe_lab.html">PHE GIS Lab</a>
+      <a href="/about/mission_vision.html">Mission & Vision</a>
+      <a href="/about/projects.html">Projects</a>
+      <a href="/about/roadmap.html">Roadmap</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <span>Assets</span>
+    <div class="dropdown-content">
+      <a href="/assets/documents.html">Document Repository</a>
+      <a href="/assets/tools.html">Scripts, Tools & Utilities</a>
+      <a href="/assets/maps.html">Maps</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <span>Learning Hub</span>
+    <div class="dropdown-content">
+      <a href="/learning/resources.html">Resources</a>
+      <a href="/learning/blogs.html">Blogs</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <span>Important Links</span>
+    <div class="dropdown-content">
+      <a href="/links/software.html">Softwares & Tools</a>
+      <a href="/links/geoportals.html">Geoportals</a>
+      <a href="/links/agencies.html">Nodal Agencies</a>
+    </div>
+  </div>
+  <a href="/nirmaljal/index.html">NirmalJal Portal</a>
+  <a href="/contact/contact.html">Contact</a>
+</nav>
+</nav>
+  <script>
+    fetch('/menu.html')
+      
+      
+  </script>
+    
+  <header>
+    <h1>PHE GeoHub</h1>
+    <p>GIS & RS initiatives of Public Health Engineering Department, Assam</p>
+  </header>
+  
+  <section class="grid">
+    <div class="card">
+      <h3>Learning Hub</h3>
+      <p>Resources and training materials</p>
+    </div>
+    <div class="card">
+      <h3>Current GIS Projects</h3>
+      <p>Live tracking and mapping of works</p>
+    </div>
+    <div class="card">
+      <h3>Tools & Utilities</h3>
+      <p>Geo-coding, scripts, converters</p>
+    </div>
+    <div class="card">
+      <h3>Document Repository</h3>
+      <p>Guidelines, reports, maps</p>
+    </div>
+    <div class="card">
+      <h3>Satellite & Remote Sensing</h3>
+      <p>RS-based change detection, monitoring</p>
+    </div>
+    <div class="card">
+      <h3>Roadmap Ahead</h3>
+      <p>Future plans and innovations</p>
+    </div>
+    <div class="card">
+      <h3>Dashboards</h3>
+      <p>Interactive data visualisation</p>
+    </div>
+    <div class="card">
+      <h3>Feedback & Forum</h3>
+      <p>User comments and suggestions</p>
+    </div>
+    <div class="card">
+      <h3>About</h3>
+      <p>Mission, team, ecosystem</p>
+    </div>
+  </section>
+  <footer>
+    &copy; Public Health Engineering Department, Assam
+  </footer>
+</body>
+</html>
